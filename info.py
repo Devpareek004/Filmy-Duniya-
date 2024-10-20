@@ -18,7 +18,7 @@ API_HASH = environ.get('API_HASH', 'e3e2f3b65ef58634139ccd27d6b7d8cb')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7093508362:AAHjKif_JJWXcmJOfmgM5O01n1S1oTHig0k')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5672857559 6914788581').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6914788581').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/Morning006") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002427059740'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/Dev_movie_bot_Group')
@@ -31,12 +31,12 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anyname')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0') # If anyone sends a request message to your bot, you will get it in this channel.
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002427059740'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002427059740')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002427059740'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002164244380')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002138748849'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002427059740') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0')) # 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
@@ -73,7 +73,7 @@ START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg https:
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/e966064bdd04b03498929-26a8558aaa41d469f8.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -97,7 +97,7 @@ LINK_MODE = is_enabled('LINK_MODE', True)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
 # Online Stream and Download
 
 MULTI_CLIENT = False
