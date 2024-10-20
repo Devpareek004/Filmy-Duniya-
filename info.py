@@ -27,7 +27,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anyname:anyname@anyname.hds31.mongodb.net/?retryWrites=true&w=majority&appName=anyname")
 DATABASE_NAME = environ.get('DATABASE_NAME', "anyname")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anyname)
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anyname')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
